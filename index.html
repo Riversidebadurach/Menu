@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Menu</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:radial-gradient(circle,#2a0a3d,#120018);
+  color:#fff
+}
+.nav{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  padding:8px
+}
+.nav button{
+  flex:1 1 48%;
+  background:#5a189a;
+  color:#fff;
+  border:none;
+  padding:12px;
+  font-size:14px
+}
+.nav button:hover{background:#7b2cbf}
+.section{padding:20px}
+.hidden{display:none}
+h2{
+  text-align:center;
+  color:#c77dff;
+  letter-spacing:2px
+}
+.item{
+  display:flex;
+  justify-content:space-between;
+  padding:10px 0;
+  border-bottom:1px dotted #9d4edd
+}
+.desc{font-size:13px;color:#e0caff}
+.price{font-weight:bold}
+</style>
+</head>
+
+<body>
+
+<div class="nav">
+  <button onclick="show('shishas')">Shishas</button>
+  <button onclick="show('getranke')">Getränke</button>
+  <button onclick="show('shots')">Shots</button>
+  <button onclick="show('bier')">Bier</button>
+  <button onclick="show('cocktails')">Cocktails mit Alkohol</button>
+  <button onclick="show('longdrinks')">Longdrinks</button>
+  <button onclick="show('aperitifs')">Aperitifs</button>
+  <button onclick="show('hot')">Heisse Getränke</button>
+</div>
+
+<!-- SHISHAS -->
+<div id="shishas" class="section">
+<h2>SHISHAS</h2>
+
+<div class="item"><div><b>Grape Mint</b><div class="desc">Traube, Minze</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Hamburg</b><div class="desc">Beerenmix</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Beach Vibes</b><div class="desc">Limette, Himbeere, Orange</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>069 / FFM</b><div class="desc">Beerenmix, Ice</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Love 66</b><div class="desc">Wassermelone, Honigmelone, Maracuja</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Falim</b><div class="desc">Türkischer Kaugummi</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Falim Red</b><div class="desc">Türkischer Kaugummi, Erdbeere</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Persian Apple</b><div class="desc">Süßer Apfel</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Double Crunch</b><div class="desc">Doppelapfel</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>African Queen</b><div class="desc">16 Früchte Mix</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>African King</b><div class="desc">24 Früchte Mix</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Bonnie & Clyde</b><div class="desc">Grüner Apfel, Ice</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Black Box</b><div class="desc">Acai</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Pynalp</b><div class="desc">Ananas, Ice</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Sommer in Beirut</b><div class="desc">Wassermelone, Himbeere, Zitrone</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Blaulicht</b><div class="desc">Blaubeerenmix</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Bruderherz</b><div class="desc">Drachenfrucht, Ice</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Löwenherz</b><div class="desc">Himbeere, Drachenfrucht, Pfirsich</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Black</b><div class="desc">Beerenmix, Traube</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>White</b><div class="desc">Zitronenkuchen, Vanille</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Dragon Berry</b><div class="desc">Drachenfrucht, Beerenmix</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Orange Mint</b><div class="desc">Orange, Minze</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Green Mind Fresh</b><div class="desc">Minze</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Ice Kaktus</b><div class="desc">Kaktus, Ice</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Watermelon</b><div class="desc">Wassermelone</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Cold Peach</b><div class="desc">Pfirsich Eis</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>LMN</b><div class="desc">Zitrone, Minze</div></div><div class="price">16€</div></div>
+<div class="item"><div><b>Cherry Berry</b><div class="desc">Kirsche, Limette</div></div><div class="price">16€</div></div>
+
+</div>
+
+<!-- GETRÄNKE -->
+<div id="getranke" class="section hidden">
+<h2>GETRÄNKE</h2>
+<div class="item"><div><b>Wasser still / medium</b><div class="desc">0,25l</div></div><div class="price">3€</div></div>
+<div class="item"><div><b>Cola / Zero / Light</b><div class="desc">0,2l</div></div><div class="price">3,7€</div></div>
+<div class="item"><div><b>Fanta</b><div class="desc">0,2l</div></div><div class="price">3,7€</div></div>
+<div class="item"><div><b>Sprite</b><div class="desc">0,2l</div></div><div class="price">3,7€</div></div>
+<div class="item"><div><b>Saft</b><div class="desc">0,25l</div></div><div class="price">3,8€</div></div>
+<div class="item"><div><b>Saftschorle</b><div class="desc">0,25l</div></div><div class="price">3,5€</div></div>
+<div class="item"><div><b>Red Bull</b><div class="desc">0,25l</div></div><div class="price">4,3€</div></div>
+<div class="item"><div><b>Eistee</b><div class="desc">Verschiedene Sorten</div></div><div class="price">4,3€</div></div>
+<div class="item"><div><b>Moloko</b><div class="desc">0,25l</div></div><div class="price">4,3€</div></div>
+</div>
+
+<!-- SHOTS -->
+<div id="shots" class="section hidden">
+<h2>SHOTS</h2>
+<div class="item"><div><b>Tequila Silver / Gold</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Erdbeere Limes</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Sour Apple</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Sour Blackberry</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Jägermeister</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Berliner Luft</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Vodka</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Sambuca</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Ramazzotti</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Baileys</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Malibu</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Ouzo</b></div><div class="price">3€</div></div>
+<div class="item"><div><b>Apfelstrudel</b></div><div class="price">3€</div></div>
+</div>
+
+<!-- BIER -->
+<div id="bier" class="section hidden">
+<h2>BIER</h2>
+<div class="item"><div><b>Corona</b><div class="desc">0,33l</div></div><div class="price">4,5€</div></div>
+<div class="item"><div><b>Natur Radler</b><div class="desc">0,33l</div></div><div class="price">4,5€</div></div>
+<div class="item"><div><b>Beck's Pils</b><div class="desc">0,33l</div></div><div class="price">4,5€</div></div>
+<div class="item"><div><b>Desperados</b><div class="desc">0,33l</div></div><div class="price">4,5€</div></div>
+<div class="item"><div><b>Heineken</b><div class="desc">0,33l</div></div><div class="price">4,5€</div></div>
+</div>
+
+<!-- COCKTAILS -->
+<div id="cocktails" class="section hidden">
+<h2>COCKTAILS MIT ALKOHOL</h2>
+<div class="item"><div><b>Sex on the Beach</b><div class="desc">Vodka, Orange, Zitrone, Grenadine, Pfirsichlikör</div></div><div class="price">8€</div></div>
+<div class="item"><div><b>Touch Down</b><div class="desc">Orange, Ananas, Zitrone, Grenadine, Pfirsichlikör, Vodka</div></div><div class="price">8€</div></div>
+<div class="item"><div><b>Mai Tai</b><div class="desc">Rum, Lime, Almond, Triple Sec, Orange</div></div><div class="price">8€</div></div>
+<div class="item"><div><b>Sky Island</b><div class="desc">Vodka, Rum, Curacao Blue, Kokossahne, Ananas</div></div><div class="price">8€</div></div>
+<div class="item"><div><b>Long Island Iced Tea</b><div class="desc">Vodka, Gin, Tequila, Rum, Triple Sec, Lemon, Cola</div></div><div class="price">8€</div></div>
+<div class="item"><div><b>Tequila Sunrise</b><div class="desc">Orange, Zitrone, Grenadine, Tequila</div></div><div class="price">8€</div></div>
+<div class="item"><div><b>Piña Colada</b><div class="desc">Rum, Ananas, Cocos</div></div><div class="price">8€</div></div>
+<div class="item"><div><b>Mojito</b><div class="desc">Rum, Limette, Minze, Puderzucker, Sprite</div></div><div class="price">8€</div></div>
+<div class="item"><div><b>Caipirinha</b><div class="desc">Pitu, Limette, Brauner Zucker, Ginger Ale</div></div><div class="price">8€</div></div>
+</div>
+
+<!-- LONGDRINKS -->
+<div id="longdrinks" class="section hidden">
+<h2>LONGDRINKS</h2>
+<div class="item"><div><b>Jack Daniel's Cola</b></div><div class="price">7,5€</div></div>
+<div class="item"><div><b>Jim Beam Cola</b></div><div class="price">7,5€</div></div>
+<div class="item"><div><b>Vodka Bull / Lemon / Saft</b></div><div class="price">7,5€</div></div>
+<div class="item"><div><b>Jägermeister Bull / Cola</b></div><div class="price">7,5€</div></div>
+<div class="item"><div><b>Malibu Maracuja / Kirsch</b></div><div class="price">7,5€</div></div>
+</div>
+
+<!-- APERITIFS -->
+<div id="aperitifs" class="section hidden">
+<h2>APERITIFS</h2>
+<div class="item"><div><b>Hugo</b></div><div class="price">7,5€</div></div>
+<div class="item"><div><b>Aperol Spritz</b></div><div class="price">7,5€</div></div>
+<div class="item"><div><b>Lillet Wild Berry</b><div class="desc">Lillet, Schweppes Wild Berry</div></div><div class="price">7,5€</div></div>
+<div class="item"><div><b>Lillet White Peach</b><div class="desc">Lillet, Schweppes White Peach</div></div><div class="price">7,5€</div></div>
+<div class="item"><div><b>Lillet Pomegranate</b><div class="desc">Lillet, Schweppes Pomegranate</div></div><div class="price">7,5€</div></div>
+<div class="item"><div><b>Lillet Coco Blue</b><div class="desc">Lillet, Red Bull Kokos-Blaubeere</div></div><div class="price">8,5€</div></div>
+</div>
+
+<!-- HEISSE GETRÄNKE -->
+<div id="hot" class="section hidden">
+<h2>HEISSE GETRÄNKE</h2>
+<div class="item"><div><b>Espresso</b></div><div class="price">2,2€</div></div>
+<div class="item"><div><b>Espresso Doppelt</b></div><div class="price">3,5€</div></div>
+<div class="item"><div><b>Cappuccino</b></div><div class="price">3,5€</div></div>
+<div class="item"><div><b>Milchkaffee</b></div><div class="price">3,5€</div></div>
+<div class="item"><div><b>Latte Macchiato</b></div><div class="price">4€</div></div>
+<div class="item"><div><b>Heiße Schokolade</b></div><div class="price">3,5€</div></div>
+<div class="item"><div><b>Eis Kaffee</b></div><div class="price">4,5€</div></div>
+<div class="item"><div><b>Tee</b></div><div class="price">2,5€</div></div>
+</div>
+
+<script>
+function show(id){
+  document.querySelectorAll('.section').forEach(s=>s.classList.add('hidden'));
+  document.getElementById(id).classList.remove('hidden');
+}
+</script>
+
+</body>
+</html>
